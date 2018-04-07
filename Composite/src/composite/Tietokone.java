@@ -15,11 +15,11 @@ public class Tietokone {
     
    private final IF_TietokoneFactory factory;
    private Component case;
-   private Component motherboard;
-   private Component cpu;
-   private Component gpu;
-   private Component ram;
-   private Component nic;
+   private Component emolevy;
+   private Component prosessori;
+   private Component näytönohjain;
+   private Component muistipiiri;
+   private Component verkkokortti;
   
    public Tietokone(IF_TietokoneFactory factory) {
         this.factory = factory;
@@ -28,17 +28,17 @@ public class Tietokone {
     
     private void assemble() {
         case = factory.createCase();
-        motherboard = factory.createMotherboard();
-        cpu = factory.createCpu();
-        gpu = factory.createGpu();
-        ram = factory.createRam();
-        nic = factory.createNic();
+        motherboard = factory.createEmolevy();
+        cpu = factory.createProsessori();
+        gpu = factory.createNäytönohjain();
+        ram = factory.createMuistipiiri();
+        nic = factory.createVerkkokortti();
         
-        motherboard.add(cpu);
-        motherboard.add(gpu);
-        motherboard.add(ram);
-        motherboard.add(nic);
-        casing.add(motherboard);
+        motherboard.add(Prosessori);
+        motherboard.add(Näytönohjain);
+        motherboard.add(Muistipiiri);
+        motherboard.add(Verkkokortti);
+        casing.add(emolevy);
     }
     
     public double getPrice() {

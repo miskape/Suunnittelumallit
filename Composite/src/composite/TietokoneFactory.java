@@ -12,33 +12,33 @@ package composite;
 public class TietokoneFactory implements {
     
     @Override
-    public Component createCase() {
-        return new Case(99.90);
+    public Component createKotelo() {
+        return new Kotelo(00.00);
     }
 
     @Override
-    public Component createMotherboard() {
-        return new Motherboard(129.99);
+    public Component createEmolevy() {
+        return new Emolevy(00.00);
     }
 
     @Override
-    public Component createCpu() {
-        return new Cpu(299.90);
+    public Component createProsessori() {
+        return new Prosessori(00.00);
     }
 
     @Override
-    public Component createGpu() {
-        return new Gpu(499.90);
+    public Component createNäytönohjain() {
+        return new Näytönohjain(00.00);
     }
 
     @Override
-    public Component createRam() {
-        return new Ram(79.90);
+    public Component createMuistipiiri() {
+        return new Muistipiiri(00.00);
     }
 
     @Override
-    public Component createNic() {
-        return new Nic(59.99);
+    public Component createVerkkokortti() {
+        return new Verkkokortti(00.00);
     }
     
 }

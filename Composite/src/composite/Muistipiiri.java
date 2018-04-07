@@ -11,4 +11,35 @@ package composite;
  */
 public class Muistipiiri {
     
+    private double price;
+    
+    public Muistipiiri(double price) {
+        this.price = price;
+    }
+    
+    @Override
+    public double getPrice() {
+        return price;
+    }
+
+    @Override
+    public void add(Komponentti komponentti) {
+        throw new UnsupportedOperationException("");
+    }
+
+    @Override
+    public void remove(Komponentti komponentti) {
+        throw new UnsupportedOperationException(""); 
+    }
+
+    @Override
+    public Komponentti getChild(int index) {
+        throw new UnsupportedOperationException("");
+    }
+    
+    @Override
+    public String toString() {
+        return "muistipiiri";
+    }
+    
 }

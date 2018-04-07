@@ -3,17 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/miskape/Documents/NetBeansProjects/Composite/src/composite/IF_TietokoneFactory.java</file>
-            <file>file:/C:/Users/miskape/Documents/NetBeansProjects/Composite/src/composite/TietokoneFactory.java</file>
-            <file>file:/C:/Users/miskape/Documents/NetBeansProjects/Composite/src/composite/Emolevy.java</file>
-            <file>file:/C:/Users/miskape/Documents/NetBeansProjects/Composite/src/composite/Komponentti.java</file>
-            <file>file:/C:/Users/miskape/Documents/NetBeansProjects/Composite/src/composite/Main.java</file>
-            <file>file:/C:/Users/miskape/Documents/NetBeansProjects/Composite/src/composite/Verkkokortti.java</file>
-            <file>file:/C:/Users/miskape/Documents/NetBeansProjects/Composite/src/composite/Näytönohjain.java</file>
-            <file>file:/C:/Users/miskape/Documents/NetBeansProjects/Composite/src/composite/Prosessori.java</file>
-            <file>file:/C:/Users/miskape/Documents/NetBeansProjects/Composite/src/composite/Muistipiiri.java</file>
-            <file>file:/C:/Users/miskape/Documents/NetBeansProjects/Composite/src/composite/Kotelo.java</file>
-            <file>file:/C:/Users/miskape/Documents/NetBeansProjects/Composite/src/composite/Tietokone.java</file>
+            <file>file:/home/miska/Downloads/Suunnittelumallit-master/Composite/src/composite/Kotelo.java</file>
+            <file>file:/home/miska/Downloads/Suunnittelumallit-master/Composite/src/composite/Muistipiiri.java</file>
+            <file>file:/home/miska/Downloads/Suunnittelumallit-master/Composite/src/composite/Tietokone.java</file>
+            <file>file:/home/miska/Downloads/Suunnittelumallit-master/Composite/src/composite/Näytönohjain.java</file>
+            <file>file:/home/miska/Downloads/Suunnittelumallit-master/Composite/src/composite/Emolevy.java</file>
+            <file>file:/home/miska/Downloads/Suunnittelumallit-master/Composite/src/composite/Verkkokortti.java</file>
+            <file>file:/home/miska/Downloads/Suunnittelumallit-master/Composite/src/composite/TietokoneFactory.java</file>
+            <file>file:/home/miska/Downloads/Suunnittelumallit-master/Composite/src/composite/Prosessori.java</file>
+            <file>file:/home/miska/Downloads/Suunnittelumallit-master/Composite/src/composite/Komponentti.java</file>
         </group>
     </open-files>
 </project-private>

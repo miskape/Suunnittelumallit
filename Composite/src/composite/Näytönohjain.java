@@ -24,17 +24,17 @@ public class Näytönohjain {
 
     @Override
     public void add(Komponentti komponentti) {
-        throw new UnsupportedOperationException("You cannot add to this component.");
+        throw new UnsupportedOperationException("");
     }
 
     @Override
     public void remove(Komponentti komponentti) {
-        throw new UnsupportedOperationException("You cannot remove from this component."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException(""); 
     }
 
     @Override
-    public Component getChild(int index) {
-        throw new UnsupportedOperationException("This component has no children."); //To change body of generated methods, choose Tools | Templates.
+    public Komponentti getChild(int index) {
+        throw new UnsupportedOperationException("");
     }
     
     @Override
