@@ -9,17 +9,12 @@ package composite;
  *
  * @author miskape
  */
-public class Prosessori {
+public class Prosessori implements Komponentti {
     
     private double price;
     
     public Prosessori(double price) {
         this.price = price;
-    }
-    
-    @Override
-    public double getPrice() {
-        return price;
     }
 
     @Override
@@ -35,6 +30,11 @@ public class Prosessori {
     @Override
     public Komponentti getChild(int index) {
         throw new UnsupportedOperationException("");
+    }
+    
+    @Override
+    public double getPrice() {
+        return price;
     }
     
     @Override

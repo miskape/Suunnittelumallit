@@ -6,43 +6,42 @@
 package composite;
 
 
-
 /**
  *
  * @author miskape
  */
 public class Tietokone {
     
-   private final IF_TietokoneFactory factory;
-   private Component case;
-   private Component emolevy;
-   private Component prosessori;
-   private Component näytönohjain;
-   private Component muistipiiri;
-   private Component verkkokortti;
+   private final AbstractFactory factory;
+   private Komponentti rakenna;
+   private Komponentti emolevy;
+   private Komponentti prosessori;
+   private Komponentti näytönohjain;
+   private Komponentti muistipiiri;
+   private Komponentti verkkokortti;
   
-   public Tietokone(IF_TietokoneFactory factory) {
+   public Tietokone(AbstractFactory factory) {
         this.factory = factory;
         assemble();
     }
     
     private void assemble() {
-        case = factory.createCase();
-        motherboard = factory.createEmolevy();
-        cpu = factory.createProsessori();
-        gpu = factory.createNäytönohjain();
-        ram = factory.createMuistipiiri();
-        nic = factory.createVerkkokortti();
+        rakenna = factory.createKotelo();
+        emolevy = factory.createEmolevy();
+        prosessori = factory.createProsessori();
+        näytönohjain = factory.createNäytönohjain();
+        muistipiiri = factory.createMuistipiiri();
+        verkkokortti = factory.createVerkkokortti();
         
-        motherboard.add(Prosessori);
-        motherboard.add(Näytönohjain);
-        motherboard.add(Muistipiiri);
-        motherboard.add(Verkkokortti);
-        casing.add(emolevy);
+        emolevy.add(prosessori);
+        emolevy.add(näytönohjain);
+        emolevy.add(muistipiiri);
+        emolevy.add(verkkokortti);
+        rakenna.add(emolevy);
     }
     
     public double getPrice() {
-        return case.getPrice();
+        return rakenna.getPrice();
     }
 
    

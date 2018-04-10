@@ -9,17 +9,12 @@ package composite;
  *
  * @author miskape
  */
-public class Näytönohjain {
+public class Näytönohjain implements Komponentti {
     
     private double price;
     
     public Näytönohjain(double price) {
         this.price = price;
-    }
-    
-    @Override
-    public double getPrice() {
-        return price;
     }
 
     @Override
@@ -35,6 +30,11 @@ public class Näytönohjain {
     @Override
     public Komponentti getChild(int index) {
         throw new UnsupportedOperationException("");
+    }
+    
+    @Override
+    public double getPrice() {
+        return price;
     }
     
     @Override

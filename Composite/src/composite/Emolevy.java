@@ -4,37 +4,44 @@
  * and open the template in the editor.
  */
 package composite;
+import java.util.ArrayList;
 
 /**
  *
  * @author miskape
  */
-public class Emolevy {
+public class Emolevy implements Komponentti {
     
     private double price;
+    private ArrayList<Komponentti> komponentit;
     
     public Emolevy(double price) {
         this.price = price;
-    }
-    
-    @Override
-    public double getPrice() {
-        return price;
+        komponentit = new ArrayList();
     }
 
     @Override
     public void add(Komponentti komponentti) {
-        throw new UnsupportedOperationException("");
+        komponentit.add(komponentti);
     }
 
     @Override
     public void remove(Komponentti komponentti) {
-        throw new UnsupportedOperationException(""); 
+        komponentit.remove(komponentit.indexOf(komponentti));;  
     }
 
     @Override
     public Komponentti getChild(int index) {
-        throw new UnsupportedOperationException("");
+        return komponentit.get(index);
+    }
+    
+    @Override
+    public double getPrice() {
+        double hinta = price;
+        for(Komponentti komponentti : komponentit) {
+            hinta += komponentti.getPrice();
+        }
+        return hinta;
     }
     
     @Override

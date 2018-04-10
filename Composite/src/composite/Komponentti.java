@@ -12,10 +12,11 @@ package composite;
 public interface Komponentti {
     
     
-    public abstract double getPrice();
     public abstract void add(Komponentti komponentti);
     public abstract void remove(Komponentti komponentti);
     public abstract Komponentti getChild(int index);
+    public abstract double getPrice();
+    
     @Override
     public abstract String toString();
     

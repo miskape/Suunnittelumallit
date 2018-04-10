@@ -4,39 +4,47 @@
  * and open the template in the editor.
  */
 package composite;
+import java.util.ArrayList;
 
 /**
  *
  * @author miskape
  */
-public class Kotelo {
+public class Kotelo implements Komponentti {
     
     private double price;
+    private ArrayList<Komponentti> komponentit;
     
     public Kotelo(double price) {
         this.price = price;
+        komponentit = new ArrayList();
     }
     
-    @Override
-    public double getPrice() {
-        return price;
-    }
-
+   
     @Override
     public void add(Komponentti komponentti) {
-        throw new UnsupportedOperationException("");
+        komponentit.add(komponentti);
     }
 
     @Override
     public void remove(Komponentti komponentti) {
-        throw new UnsupportedOperationException(""); 
+        komponentit.remove(komponentit.indexOf(komponentti));; 
     }
 
     @Override
     public Komponentti getChild(int index) {
-        throw new UnsupportedOperationException("");
+        return komponentit.get(index);
     }
     
+    @Override
+    public double getPrice() {
+        double hinta = price;
+        for(Komponentti komponentti : komponentit) {
+            hinta += komponentti.getPrice();
+        }
+        return hinta;
+    }
+
     @Override
     public String toString() {
         return "kotelo";

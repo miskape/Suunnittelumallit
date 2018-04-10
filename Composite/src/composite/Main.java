@@ -13,9 +13,7 @@ public class Main {
     
     public static void main(String[] args) {
         TietokoneFactory factory = new TietokoneFactory();
-        Tietokone computer = new Tietokone(factory);
-        
-        System.out.println("Tietokoneen hinta on: " + Double.toString(Tietokone.getPrice()));
+        Tietokone tietokone = new Tietokone(factory);
+        System.out.println("Tietokone maksaa " + Double.toString(tietokone.getPrice()) + " euroa.");
     }
-    
 }

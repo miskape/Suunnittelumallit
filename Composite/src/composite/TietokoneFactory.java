@@ -9,36 +9,37 @@ package composite;
  *
  * @author miskape
  */
-public class TietokoneFactory implements {
+public class TietokoneFactory implements AbstractFactory {
+    
     
     @Override
-    public Component createKotelo() {
-        return new Kotelo(00.00);
+    public Komponentti createKotelo() {
+        return new Kotelo(67.90);
     }
 
     @Override
-    public Component createEmolevy() {
-        return new Emolevy(00.00);
+    public Komponentti createEmolevy() {
+        return new Emolevy(136.90);
     }
 
     @Override
-    public Component createProsessori() {
-        return new Prosessori(00.00);
+    public Komponentti createProsessori() {
+        return new Prosessori(263.90);
     }
 
     @Override
-    public Component createNäytönohjain() {
-        return new Näytönohjain(00.00);
+    public Komponentti createNäytönohjain() {
+        return new Näytönohjain(349.90);
     }
 
     @Override
-    public Component createMuistipiiri() {
-        return new Muistipiiri(00.00);
+    public Komponentti createMuistipiiri() {
+        return new Muistipiiri(172.90);
     }
 
     @Override
-    public Component createVerkkokortti() {
-        return new Verkkokortti(00.00);
+    public Komponentti createVerkkokortti() {
+        return new Verkkokortti(39.90);
     }
     
 }
