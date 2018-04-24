@@ -14,12 +14,11 @@ import java.util.Map;
  */
 public class Main {
     public static void main(String[] args) {
-        
+         
+        Map<String, Object> menu = new HashMap();
         Pizza tonnikala = new Tonnikala(new Pohja());
         Pizza kinkku= new Kinkku(new Pohja());
         Pizza salami = new Salami(new Pohja());
-        
-        Map<String, Object> menu = new HashMap();
         
         menu.put("Tonnikalapizza", tonnikala);
         menu.put("Kinkkupizza", kinkku);
@@ -31,6 +30,5 @@ public class Main {
             
             System.out.println(name + ": " + pizza.getDescription() + " " + String.valueOf(pizza.getHinta()) + " €.");
         }
-
     }
 }
