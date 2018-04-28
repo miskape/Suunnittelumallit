@@ -11,7 +11,7 @@ package visitor;
  */
 public interface Visitor {
   
-    public void visit(Charizard instance);
     public void visit(Charmander instance);
     public void visit(Charmeleon instance);
+    public void visit(Charizard instance);
 }
